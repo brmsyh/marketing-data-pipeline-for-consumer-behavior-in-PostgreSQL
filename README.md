@@ -35,51 +35,8 @@ This project turns that export (**110,214 lines, 20 columns**) into an analytics
 | Ratings as `4/5`, `4 stars`, out of range | Keep 1–5; unrated stays NULL (not 0) |
 
 ## Database schema (3NF)
-```mermaid
-erDiagram
-    main_fact }o--|| dim_gender : gender_id
-    main_fact }o--|| dim_time : time_id
-    main_fact }o--|| dim_payment_method : payment_method_id
-    main_fact }o--|| dim_product_category : product_category_id
-    main_fact }o--|| dim_location : location_id
-    main_fact {
-        int main_id PK
-        varchar transaction_id UK
-        smallint age
-        smallint quantity
-        numeric discount_pct
-        numeric purchase_amount
-        smallint customer_rating
-    }
-    dim_gender {
-        smallint gender_id PK
-        varchar gender UK
-    }
-    dim_time {
-        int time_id PK
-        timestamp time_of_purchase UK
-        date date
-        smallint year
-        smallint quarter
-        smallint month
-        smallint hour
-        boolean is_weekend
-    }
-    dim_payment_method {
-        smallint payment_method_id PK
-        varchar payment_method UK
-        varchar payment_type
-    }
-    dim_product_category {
-        smallint product_category_id PK
-        varchar product_category UK
-    }
-    dim_location {
-        smallint location_id PK
-        varchar city UK
-        varchar region
-    }
-```
+![3NF schema: main_fact with five dimension tables](images/erd.png)
+
 - `region` depends on `city` and `payment_type` on `payment_method` — both candidate keys of their dimension, so the design stays in 3NF.
 - `categorical_purchase_amount` (low < 60k · mid 60k–<150k · high ≥ 150k VND) is derived from `purchase_amount`, so it is **not stored** in the fact table; it is exposed through the view `v_main_fact_enriched`.
 
