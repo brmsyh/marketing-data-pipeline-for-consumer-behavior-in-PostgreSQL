@@ -1,4 +1,4 @@
-# **Marketing Data Pipeline for Consumer Behavior (Pandas → PostgreSQL, 3NF)**
+# **Marketing Data Pipeline for Consumer Behavior (Pandas -> PostgreSQL, 3NF)**
 
 **Client:** specialty coffee & bakery chain in Vietnam — 37 outlets across 7 cities (client name withheld)
 **Role:** freelance data engineer / analyst · **Data period:** July 2024 – June 2025
