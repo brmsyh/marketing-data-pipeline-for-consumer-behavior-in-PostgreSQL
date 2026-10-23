@@ -1,3 +1,5 @@
-gender,gender_id
-Female,1
-Male,2
+gender_id,gender
+1,Female
+2,Male
+3,Other
+4,Unspecified

@@ -1,3 +1,5 @@
-gender,total_purchase_amount
-Female,51052.07
-Male,45716.22
+gender,total_purchase_amount,transactions
+Female,2972532500,38767
+Male,2423224000,31571
+Unspecified,171509000,2218
+Other,103204000,1380

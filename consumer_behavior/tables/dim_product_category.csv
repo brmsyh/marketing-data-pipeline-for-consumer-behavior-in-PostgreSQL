@@ -1,6 +1,8 @@
-product_category,product_category_id
-Married,1
-Single,2
-Widowed,3
-Divorced,4
-,5
+product_category_id,product_category
+1,Coffee
+2,Tea
+3,Blended Ice
+4,Bakery
+5,Sandwich & Snacks
+6,Packaged Beans
+7,Merchandise

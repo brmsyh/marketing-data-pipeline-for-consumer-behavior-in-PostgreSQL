@@ -1,5 +1,8 @@
-location,location_id
-Bachelor's,1
-Master's,2
-High School,3
-,4
+location_id,city,region
+1,Hai Phong,North
+2,Hanoi,North
+3,Da Nang,Central
+4,Hue,Central
+5,Nha Trang,Central
+6,Can Tho,South
+7,Ho Chi Minh City,South

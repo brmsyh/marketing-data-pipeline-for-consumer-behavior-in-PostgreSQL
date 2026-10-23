@@ -1,4 +1,8 @@
-payment_method,payment_method_id
-Middle,1
-High,2
-,3
+payment_method_id,payment_method,payment_type
+1,Cash,Cash
+2,Credit/Debit Card,Card
+3,MoMo,E-wallet
+4,ShopeePay,E-wallet
+5,VNPay QR,QR banking
+6,ZaloPay,E-wallet
+7,Unknown,Unknown
